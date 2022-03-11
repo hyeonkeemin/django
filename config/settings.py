@@ -117,6 +117,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
+# 웹 페이지에 디자인을 적용하기 위해서 스타일시트(CSS)를 사용. 파이보에 적용하려면 스태틱 디렉토리에 있어야함
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
